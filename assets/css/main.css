@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1288,15 +1291,18 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
-			line-height: 5.5rem;
-			border: solid 1px #ffffff;
-			border-radius: 100%;
-		}
+			background: none;
+			box-shadow: none;
+			border-radius: 0;
+			}
 
-			#header .logo .icon:before {
-				font-size: 2rem;
+		#header .logo img {
+			width: 8rem;        /* increase if you want it bigger (7rem or 8rem works well) */
+			height: 8rem;
+			object-fit: contain;
+			border-radius: 50%;   /* or 50% if you prefer circular */
+			display: block;
+			margin: 0 auto;
 			}
 
 		#header .content {
