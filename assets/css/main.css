@@ -1297,13 +1297,28 @@ input, select, textarea {
 			}
 
 		#header .logo img {
-			width: 8rem;        /* increase if you want it bigger (7rem or 8rem works well) */
+			width: 8rem;        		/* increase if you want it bigger (7rem or 8rem works well) */
 			height: 8rem;
 			object-fit: contain;
-			border-radius: 50%;   /* or 50% if you prefer circular */
+			border-radius: 50%;   		/* or 50% if you prefer circular */
 			display: block;
 			margin: 0 auto;
 			}
+			
+		/* Adjust logo for mobile screens */
+		@media screen and (max-width: 480px) {
+		#header .logo img {
+			width: 4.5rem;      		/* smaller logo for mobile */
+			height: 4.5rem;
+			border-radius: 50%; 		/* keep circular if you like */
+		}
+
+		#header .logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		}
 
 		#header .content {
 			border-style: solid;
